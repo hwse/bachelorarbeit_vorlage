@@ -1,0 +1,31 @@
+\input{Header/Header}
+
+\begin{document}
+
+% Füge Deckblatt ein
+\include{Deckblatt/Deckblatt}
+\newpage
+
+% Kurzfassung, welche nicht im Inhaltsverzeichnis auftaucht
+\include{Inhalt/Kurzfassung}
+
+% Generiere Inhaltsangabe
+\tableofcontents
+\newpage
+
+% Füge Inhalt ein
+\include{Inhalt/Inhalt}
+\newpage
+
+% Glossar und Abkürzungsverzeichnis erstellen
+\printglossary[title=Glossar]
+\newpage
+
+% Generiere Literaturverzeichniss
+\printbibliography
+\newpage
+
+% Füge Formulare ein
+\include{Formulare/Formulare}
+
+\end{document}
